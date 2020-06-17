@@ -27,6 +27,18 @@ textarea {
   resize: vertical;
 }
 
+.btn {
+  background-color: orange;
+  border-color: orange;
+  color: black;
+  margin-bottom: 10px;
+  &:hover {
+    background-color: #fec107;
+    border-color: #fec107;
+    color: black;
+  }
+}
+
 /* 文字 */
 h1, h2, h3, h4, h5, h6 {
   line-height: 1;
@@ -73,5 +85,33 @@ p {
   color: black;
   &:hover {
     color: gray;
+  }
+}
+
+/* フォーム */
+
+input, textarea, select, .uneditable-input {
+  border: 1px solid #bbb;
+  width: 100%;
+  margin-bottom: 15px;
+  /* @include box_sizing; */
+}
+
+input {
+  height: auto !important;
+}
+
+#error_explanation {
+  color: red;
+  ul {
+    color: red;
+    margin: 0 0 30px 0;
+  }
+}
+
+.field_with_errors {
+  @extend .has-error;
+  .form-control {
+    color: $state-danger-text;
   }
 }
