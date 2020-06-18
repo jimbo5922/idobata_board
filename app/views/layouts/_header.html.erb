@@ -3,7 +3,12 @@
     <%= link_to "井戸端掲示板", root_path, id: "logo" %>
     <nav>
       <ul class="nav navbar-nav navbar-right">
-        <li><%= link_to "ログイン", '#', id: "login" %></li>
+        <% if logged_in? %>
+          <li><%= link_to current_user.name, current_user, id: "login" %></li>
+          <li><%= link_to "ログアウト", logout_path, method: :delete, id: "login" %></li>
+        <% else %>
+          <li><%= link_to "ログイン", login_path, id: "login" %></li>
+        <% end %>
       </ul>
     </nav>
   </div>
