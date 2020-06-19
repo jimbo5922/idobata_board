@@ -2,3 +2,11 @@
 <h1>
   <%= @user.name %>
 </h1>
+<p class="edit_user">
+  <%= link_to "プロフィール編集", edit_user_path(current_user) %>
+</p>
+<p class="delete_user">
+  <% if @user == current_user %>
+    <%= link_to "アカウントを削除する", @user, method: :delete %>
+  <% end %>
+</p>

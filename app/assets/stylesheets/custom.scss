@@ -2,6 +2,7 @@
 @import "bootstrap";
 
 /* 全体 */
+
 body {
   background-color: #F2F2F2;
   padding-top: 60px;
@@ -40,6 +41,7 @@ textarea {
 }
 
 /* 文字 */
+
 h1, h2, h3, h4, h5, h6 {
   line-height: 1;
 }
@@ -65,7 +67,12 @@ p {
   line-height: 1.7em;
 }
 
+.edit_user, .delete_user {
+  text-align: center;
+}
+
 /* ヘッダー */
+
 #logo {
   float: left;
   margin-right: 10px;
@@ -94,7 +101,6 @@ input, textarea, select, .uneditable-input {
   border: 1px solid #bbb;
   width: 100%;
   margin-bottom: 15px;
-  /* @include box_sizing; */
 }
 
 input {
