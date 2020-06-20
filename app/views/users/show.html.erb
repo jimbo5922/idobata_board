@@ -7,6 +7,6 @@
 </p>
 <p class="delete_user">
   <% if @user == current_user %>
-    <%= link_to "アカウントを削除する", @user, method: :delete %>
+    <%= link_to "アカウントを削除する", @user, method: :delete, data: { confirm: "削除してよろしいですか？" } %>
   <% end %>
 </p>

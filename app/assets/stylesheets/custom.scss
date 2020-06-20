@@ -135,3 +135,25 @@ input {
   width: auto;
   margin-left: 0;
 }
+
+/* スレッド */
+
+.boards {
+  list-style: none;
+  padding: 0;
+  margin: 10px 20px 10px 20px;
+  li {
+    padding: 10px 0;
+    border-top: 1px solid gray;
+    span {
+      display: block;
+    }
+    .title {
+      font-size: 25px;
+    }
+  }
+  .timestamp {
+    color: $gray-light;
+    display: block;
+  }
+}
