@@ -11,15 +11,15 @@ class BoardsController < ApplicationController
       flash[:success] = "スレッドを作成しました"
       redirect_to root_url
     else
-      flash.now[:danger] = "タイトルと説明文は必須項目です"
+      flash.now[:danger] = "タイトル(1〜50字)と説明文(1〜100字)は必須項目です"
       render 'new'
     end
   end
 
-  def index
-  end
-
   def show
+    @board = Board.find(params[:id])
+    @responce = Responce.new
+    @user = User.find_by(id: @board.user_id)
   end
 
   private

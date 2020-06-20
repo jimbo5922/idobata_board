@@ -157,3 +157,40 @@ input {
     display: block;
   }
 }
+
+/* スレッド詳細画面 */
+
+.show_board {
+  list-style: none;
+  padding: 0;
+  margin: 10px 20px 10px 20px;
+  border-bottom: 2px solid black;
+  li {
+    padding: 10px 0;
+    border-top: 1px solid gray;
+  }
+  span {
+    display: block;
+  }
+  .title {
+    font-size: 38px;
+  }
+  .description {
+    margin-bottom: 10px;
+  }
+  .timestamp {
+    color: $gray-light;
+    display: block;
+  }
+}
+
+.responces {
+  margin: 10px 20px 10px 20px;
+  .responce {
+    border-bottom: 1px solid gray;
+    margin: 15px 0px 15px 0px;
+    .content {
+      margin-bottom: 5px;
+    }
+  }
+}

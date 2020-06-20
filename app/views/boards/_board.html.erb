@@ -1,5 +1,5 @@
 <li id="board-<%= board.id %>">
-  <span class="title"><%= link_to board.title, "#" %></span>
+  <span class="title"><%= link_to board.title, board %></span>
   <span class="description"><%= board.description %></span>
-  <span class="timestamp"><%= l board.created_at %></span>
+  <span class="timestamp"><%= l board.created_at %>に作成</span>
 </li>
