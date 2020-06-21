@@ -1,0 +1,7 @@
+<div class="search">
+  <%= search_form_for @search, url: @url do |f| %>
+    <%= f.label :title_cont, "スレッド検索" %>
+    <%= f.search_field :title_cont %>
+    <%= f.submit "検索", class: "btn btn-primary" %>
+  <% end %>
+</div>

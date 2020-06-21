@@ -22,6 +22,9 @@ class BoardsController < ApplicationController
     @user = User.find_by(id: @board.user_id)
   end
 
+  def index
+  end
+
   private
 
     def board_params
