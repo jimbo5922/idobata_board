@@ -10,4 +10,5 @@ Rails.application.routes.draw do
   resources :boards do
     resources :responces, only: :create
   end
+  resources :testsessions, only: :create
 end
