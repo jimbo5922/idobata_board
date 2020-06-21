@@ -2,6 +2,10 @@
   <div class="show_board" id="board-<%= @board.id %>">
     <span class="title"><%= @board.title %></span>
     <span class="description"><%= @board.description %></span>
+    <span>【カテゴリ】</span>
+    <% @board.categories.each do |category| %>
+      <%= category.name %>
+    <% end %>
   </div>
 
   <div class="responces">

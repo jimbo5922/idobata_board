@@ -28,6 +28,6 @@ class BoardsController < ApplicationController
   private
 
     def board_params
-      params.require(:board).permit(:title, :description)
+      params.require(:board).permit(:title, :description, category_ids: [])
     end
 end
