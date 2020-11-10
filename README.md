@@ -1,8 +1,5 @@
 # 井戸端掲示板
 
-## URL  
-https://agile-woodland-56708.herokuapp.com/
-
 ## 使用技術  
 ・Ruby 2.6.3, Rails 6.0.3.1  
 ・Heroku  
